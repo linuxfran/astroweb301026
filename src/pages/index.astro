@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout titulo="Inicio | Igualdad TP">
+	<Hero
+		titulo="Las oportunidades no tienen género"
+		descripcion="Promovemos la igualdad de género en la educación técnico-profesional, para que cada estudiante pueda aprender y desarrollar sus capacidades sin prejuicios."
+	/>
+
+	<section class="contenedor">
+		<h2>¿Por qué es importante la igualdad?</h2>
+
+		<p>
+			Todas las personas deben tener las mismas oportunidades para
+			estudiar, participar y desarrollar sus habilidades. La especialidad
+			que elige alguien no debería depender de estereotipos o prejuicios.
+		</p>
+
+		<div class="tarjetas">
+			<Card
+				icono="💻"
+				titulo="Tecnología para todos"
+				descripcion="Todas las personas pueden aprender programación e informática."
+			/>
+
+			<Card
+				icono="🤝"
+				titulo="Respeto e inclusión"
+				descripcion="Un ambiente respetuoso permite que cada estudiante participe sin discriminación."
+			/>
+
+			<Card
+				icono="🌟"
+				titulo="Mismas oportunidades"
+				descripcion="Las capacidades y los intereses deben ser más importantes que los estereotipos."
+			/>
+		</div>
+	</section>
+</Layout>

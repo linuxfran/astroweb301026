@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #33313a;
+  background: #fcfafd;
+}
+
+main {
+  min-height: 60vh;
+}
+
+.contenedor {
+  width: min(1100px, 90%);
+  margin: 45px auto;
+}
+
+.contenedor h2 {
+  color: #352b46;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+a:focus-visible {
+  outline: 3px solid #e4a3c4;
+  outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedor {
+    width: 92%;
+  }
+}

@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout titulo="Propuestas de cambio | Igualdad TP">
+  <Hero
+    titulo="Propuestas de cambio"
+    descripcion="La igualdad se construye con acciones cotidianas que promueven el respeto, la participación y las oportunidades para todas las personas."
+  />
+
+  <section class="contenedor">
+    <h2>¿Cómo podemos contribuir?</h2>
+
+    <div class="tarjetas">
+      <Card
+        icono="📚"
+        titulo="Educar y aprender"
+        descripcion="Conversar sobre igualdad de género y reconocer cómo afectan los estereotipos."
+      />
+
+      <Card
+        icono="💬"
+        titulo="Respetar a los demás"
+        descripcion="Evitar burlas y comentarios discriminatorios, y escuchar las opiniones de cada persona."
+      />
+
+      <Card
+        icono="🚀"
+        titulo="Apoyar los intereses"
+        descripcion="Animar a cada estudiante a elegir su especialidad según sus gustos, habilidades y metas."
+      />
+    </div>
+
+    <h2>Un compromiso de todos</h2>
+    <p>
+      Podemos construir una comunidad educativa más justa cuando colaboramos,
+      respetamos las diferencias y rechazamos los prejuicios.
+      La igualdad comienza con nuestras propias acciones.
+    </p>
+  </section>
+</Layout>

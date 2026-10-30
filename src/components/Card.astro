@@ -1,0 +1,27 @@
+<article class="card">
+  <div class="icono" aria-hidden="true">{Astro.props.icono}</div>
+  <h2>{Astro.props.titulo}</h2>
+  <p>{Astro.props.descripcion}</p>
+</article>
+
+<style>
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #eadfeb;
+    box-shadow: 0 4px 12px #352b4610;
+  }
+
+  .icono {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    color: #674777;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+</style>

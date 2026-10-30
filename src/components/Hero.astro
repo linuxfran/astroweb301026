@@ -1,0 +1,33 @@
+<section class="hero">
+  <p class="etiqueta">EDUCACIÓN · RESPETO · OPORTUNIDADES</p>
+  <h1>{Astro.props.titulo}</h1>
+  <p class="descripcion">{Astro.props.descripcion}</p>
+</section>
+
+<style>
+  .hero {
+    background: #f3e8f3;
+    padding: 65px 8%;
+    text-align: center;
+  }
+
+  .etiqueta {
+    color: #674777;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  h1 {
+    color: #352b46;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    margin: 20px 0;
+  }
+
+  .descripcion {
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+</style>
